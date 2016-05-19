@@ -9,9 +9,6 @@ RUN rm /tmp/flex_sdk_3.6.0.16995A.zip
 # Install ant
 RUN apt-get update && apt-get install ant -y
 
-# Add flexTasks and ant-contrib jar files 
-ADD /lib /usr/lib
-
 # Update class path
 ENV PATH=/flex/bin:/usr/lib:$PATH
 
